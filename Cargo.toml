@@ -1,0 +1,19 @@
+[package]
+name = "php-dependency-explorer"
+version = "0.1.0"
+edition = "2024"
+authors = ['Andy Snell <andy@wickedbyte.com']
+license = "MIT"
+description = """
+Provides a set of command line tools for exploring and extracting
+information regarding a PHP project's Composer dependencies.
+"""
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.53", features = ["derive"] }
+ratatui = "0.29.0"
+rusqlite = { version = "0.37.0", features = ["bundled"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+sha2 = "0.10.9"
